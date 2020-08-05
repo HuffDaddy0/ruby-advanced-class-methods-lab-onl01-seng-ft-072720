@@ -31,7 +31,7 @@ class Song
   end
 
   def self.new_by_name(name, artist_name)
-    self.new(name)
+    self.new(name, artist_name)
     #binding.pry
   end
 
