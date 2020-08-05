@@ -75,7 +75,7 @@ class Song
     name = half2[0].strip
     artist_name = half[0].strip
 
-    self.create(name)
+    self.create(name, artist_name)
   end
 
   def self.destroy_all
