@@ -69,7 +69,7 @@ class Song
 
   end
 
-  def self.create_from_filename(name)
+  def self.create_from_filename(file)
     half = file.split("-", 4)
     half2 = half[1].split(".")
     name = half2[0].strip
