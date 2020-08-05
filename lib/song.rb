@@ -4,7 +4,7 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-  def initialize(name, artist_name = nil) #I wrote
+  def initialize(name = nil, artist_name = nil) #I wrote
     @name = name
     @artistname = artist_name
   end
@@ -25,7 +25,7 @@ class Song
     self.class.all << self
   end
 
-  def self.create(name)
+  def self.create
     self.new(name).save
     @@all.last
   end
@@ -70,8 +70,8 @@ class Song
 
   def self.create_from_filename(name)
     name.split("-", 4)
-    @name = name[2]
-    @artist_name = name[1]
+    name = name[2]
+    artist_name = name[1]
 
     self.create(name)
   end
