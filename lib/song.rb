@@ -25,19 +25,18 @@ class Song
   end
 
   def self.create(name)
-    self.new.save
+    self.new(name).save
     @@all.last
   end
 
   def self.new_by_name(name)
     self.new(name)
     #binding.pry
-
   end
 
   def self.create_by_name(name)
-    self.create
-    @name = name
+    self.create(name)
+    
   end
 
   def self.find_by_name(name)
