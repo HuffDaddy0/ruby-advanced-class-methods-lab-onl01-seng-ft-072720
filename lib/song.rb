@@ -70,9 +70,10 @@ class Song
   end
 
   def self.create_from_filename(name)
-    name.split("-", 4)
-    name = name[2]
-    artist_name = name[1]
+    half = file.split("-", 4)
+    half2 = half[1].split(".")
+    name = half2[0].strip
+    artist_name = half[0].strip
 
     self.create(name)
   end
