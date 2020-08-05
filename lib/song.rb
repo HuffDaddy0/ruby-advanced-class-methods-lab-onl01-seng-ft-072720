@@ -42,14 +42,14 @@ class Song
 
   def self.find_or_create_by_name(name)
     if @@all.include?(name)
-      @@all.find {|song| song.name == name}
+     self.find_by_name
     else
       self.create_by_name(name)
     end
   end
 
   def self.alphabetical
-    @@all.sort_by {|song1, song2| song1 <=> song2}
+    @@all.sort {|song1, song2| song1 <=> song2}
   end
 
   def self.new_from_filename(file)
