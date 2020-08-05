@@ -63,9 +63,9 @@ class Song
   end
 
   def self.create_from_filename(name)
-    file.split("-", 4)
-    name = file[2]
-    artist_name = file[1]
+    name.split("-", 4)
+    @name = file[2]
+    @artist_name = file[1]
 
     Song.create(name)
   end
