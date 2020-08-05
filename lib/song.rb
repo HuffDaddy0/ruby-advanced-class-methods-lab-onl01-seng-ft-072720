@@ -64,7 +64,7 @@ class Song
     half2 = half[1].split(".")
     name = half2[0].strip
     artist_name = half[0]
-#binding.pry
+binding.pry
     self.new(name, artist_name)
 
   end
