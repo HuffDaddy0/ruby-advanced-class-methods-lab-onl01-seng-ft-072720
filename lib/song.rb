@@ -25,8 +25,8 @@ class Song
     self.class.all << self
   end
 
-  def self.create(name = nil)
-    self.new(name).save
+  def self.create(name = nil, artist_name = nil)
+    self.new(name, artist_name).save
     @@all.last
   end
 
