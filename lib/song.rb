@@ -7,7 +7,7 @@ class Song
   def initialize(name) #I wrote
     @name = name
   end
-  
+
   def name
     @name
   end
