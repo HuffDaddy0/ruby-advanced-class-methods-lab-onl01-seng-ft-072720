@@ -64,7 +64,7 @@ class Song
     half.split(".")
     name = half[0]
     artist_name = file[1]
-binding.pry
+#binding.pry
     self.new(name, artist_name)
 
   end
