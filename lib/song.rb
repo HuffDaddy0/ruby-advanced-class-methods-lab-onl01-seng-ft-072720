@@ -30,8 +30,8 @@ class Song
     @@all.last
   end
 
-  def self.new_by_name(name, artist_name)
-    self.new(name, artist_name)
+  def self.new_by_name(name)
+    self.new(name)
     #binding.pry
   end
 
@@ -65,7 +65,7 @@ class Song
     name = half2[0].strip
     artist_name = half[0].strip
 binding.pry
-    self.new_by_name(name, artist_name)
+    self.new(name, artist_name)
 
   end
 
