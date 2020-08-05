@@ -4,8 +4,9 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-  def initialize(name) #I wrote
+  def initialize(name, artist_name = nil) #I wrote
     @name = name
+    @artistname = artist_name
   end
 
   def name
@@ -63,9 +64,8 @@ class Song
     name = file[2]
     artist_name = file[1]
 
-    Song.new(name, artist_name)
-    @name = name
-    @artist_name = artist_name
+    self.new(name, artist_name)
+
   end
 
   def self.create_from_filename(name)
