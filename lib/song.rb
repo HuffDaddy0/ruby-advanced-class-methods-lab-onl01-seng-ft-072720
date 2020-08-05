@@ -63,7 +63,7 @@ class Song
     half = file.split("-", 4)
     half2 = half[1].split(".")
     name = half2[0].strip
-    artist_name = half[0]
+    artist_name = half[0].strip
 binding.pry
     self.new(name, artist_name)
 
