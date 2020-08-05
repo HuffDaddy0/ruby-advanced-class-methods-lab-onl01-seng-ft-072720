@@ -35,7 +35,7 @@ class Song
     #binding.pry
   end
 
-  def self.create_by_name(name, artist_name)
+  def self.create_by_name(name,)
     self.create(name)
 
   end
