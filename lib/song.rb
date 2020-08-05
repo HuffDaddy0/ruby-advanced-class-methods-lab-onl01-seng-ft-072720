@@ -25,7 +25,7 @@ class Song
     self.class.all << self
   end
 
-  def self.create
+  def self.create(name = nil)
     self.new(name).save
     @@all.last
   end
