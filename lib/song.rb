@@ -65,7 +65,7 @@ class Song
     name = half2[0].strip
     artist_name = half[0].strip
 binding.pry
-    self.new(name, artist_name)
+    self.new_by_name(name, artist_name)
 
   end
 
