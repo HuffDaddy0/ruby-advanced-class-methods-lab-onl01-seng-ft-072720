@@ -60,8 +60,9 @@ class Song
   end
 
   def self.new_from_filename(file)
-    file.split("-", 4)
-    name = file[2]
+    half = file.split("-", 4)
+    half.split(".")
+    name = half[0]
     artist_name = file[1]
 binding.pry
     self.new(name, artist_name)
