@@ -30,12 +30,12 @@ class Song
     @@all.last
   end
 
-  def self.new_by_name(name)
+  def self.new_by_name(name, artist_name)
     self.new(name)
     #binding.pry
   end
 
-  def self.create_by_name(name)
+  def self.create_by_name(name, artist_name)
     self.create(name)
 
   end
